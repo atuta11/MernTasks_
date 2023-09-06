@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Task:1</title>
+    <style>
+        
+        table  {
+            min-width: 70%;;
+            border: 1px solid;
+            background-color: lightblue;
+            text-align: left;
+            border-radius: 10px;   
+        }
+
+        th , td{
+            border: 1px solid;
+            border-radius: 12px;
+            text-align: center;
+        }
+        td{
+            text-align: left;
+        }
+        
+
+        .flex-container{
+
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+
+        .square {
+            margin: 15px 15px;
+            width: 100px;
+            height: 80px;
+            border: 2px solid;
+            border-color: green;
+        }
+
+        .i {
+            border-radius: 10px;
+        }
+        .ii {
+            border-radius: 20px;
+        }
+        .iii{
+            border-radius: 12px;
+
+        }
+        .iv{
+            border-radius: 0;
+        }
+        .v{
+            border-radius: 50%;
+        }
+        .vi{
+            border-radius: 0px 20px 10px 20px;
+        }
+
+       
+
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>CSS Task 1</h1>
+    </div>
+    <div>
+        <table >
+            <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Dow</td>
+            <td>80</td>
+        </tr>
+
+        </table>
+    </div>
+
+
+    <div>
+    <div class="flex-container">
+        <div class="square i"></div>
+        <div class="square i"></div>
+        <div class="square ii"></div>
+    </div>
+    <div class="flex-container">
+        <div class="square iii"></div>
+        <div class="square iv"></div>
+        <div class="square iii"></div>
+    </div>
+    <div class="flex-container">
+        <div class="square v"></div>
+        <div class="square i"></div>
+        <div class="square vi"></div>
+    </div>
+    </div>
+    
+</body>
+</html>
