@@ -3,69 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Task:2</title>
-
+    <title>CSS Task 2</title>
     <style>
+       
 
-        .vertical-nav-bar{
+        .nav-bar {
             width: 150px;
             border: 1px solid;
             padding: 3px;
-            
-        }
-
-        .horizonatal-nav-bar{
-
-            display: flex;
-            flex-direction: row;
         }
 
         ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 150px;
-        background-color: lightblue;
-}
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+           
+        }
+        .vertical-ul{
+            background-color: lightblue;
+
+        }
+
+        li {
+
+            margin: 0px;
+            padding: 0;
+        }
+
+        .horizontal-li{
+            float: left;
+            color: darkblue;
+            
+            border-right: 2px;
+        }
 
         li a {
             display: block;
             text-decoration: none;
         }
 
+        li a:hover {
+            background-color: orangered;
+            color: white;
+        }
 
-    li a:hover {
-        background-color: orangered;
-        color: white;
-    }
+        /* Style for horizontal nav bar */
 
-    
-        
+
+        .horizontal-nav-bar {
+
+            margin-top: 20px;
+            width: 250px;
+            height: 20px;
+            display: flex;
+            flex-direction: row;
+            background-color: lightgray;
+
+        }
+
+        .horizontal-nav-bar li {
+            margin: 2px;
+            color: darkblue;
+            
+            
+        }
+
+        .horizontal-li a:hover {
+            background-color: darkgray;
+            color: white;
+        }
+
+
     </style>
 </head>
 <body>
     <h1>Task 2</h1>
+<div class="task2"></div>
+    <div class="bar1">
+        <h3>Vertical Navigation Bar</h3>
+    <div class="nav-bar vertical-nav-bar">
+        
+        <ul class="vertical-ul">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">Bootstrap</a></li>
+        </ul>
+    </div>
+</div>
 
-
-    <div class="vertical-nav-bar">
-        <ul class="VerticalNavBar">
-            <li><a href="">Home</a></li>
-            <li><a href="">Java</a></li>
-            <li><a href="">CSS</a></li>
-            <li><a href="">HTML</a></li>
-            <li><a href="">BootStrap</a></li>
+<div class="bar2">
+    <h3>Vertical Navigation Bar</h3>
+    <div class="nav-bar horizontal-nav-bar">
+        <ul horizontal-ul>
+            <li class="horizontal-li"><a href="#">Home</a></li>
+            <li class="horizontal-li"><a href="#">Java</a></li>
+            <li class="horizontal-li"><a href="#">CSS</a></li>
+            <li class="horizontal-li"><a href="#">HTML</a></li>
+            <li class="horizontal-li"><a href="#">Bootstrap</a></li>
         </ul>
     </div>
 
-    <div class="horizontal-nav-bar">
-        <ul class="VerticalNavBar">
-            <li><a href="">Home</a></li>
-            <li><a href="">Java</a></li>
-            <li><a href="">CSS</a></li>
-            <li><a href="">HTML</a></li>
-            <li><a href="">BootStrap</a></li>
-        </ul>
-
-    </div>
+</div>
 </body>
 </html>
