@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        h1{
+            margin: 8px;
+        }
+
+        ul{
+            list-style: none;
+            padding-left: 0px;
+
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        li{
+            
+            position: relative;
+            left: -90px;
+            display: block;
+            height: 60px;
+            width: 120px;
+            margin: 10px;
+            text-align: center;
+            padding: auto auto;
+        }
+        li:hover{
+            
+            transform: translate(60px);
+            transition: 1.25s;
+        }
+
+        .box{
+            display: flex;
+            flex-direction: row;
+        }
+
+        #green{
+            background-color: green;
+        }
+        #blue{
+            background-color: rgb(101, 101, 233);
+        }
+        #red{
+            background-color: red;
+        }
+        #grey{
+            background-color: grey;
+        }
+      
+
+    </style>
+</head>
+<body>
+    <h1>Task 4</h1>
+    <div class="box">
+    <nav class="sidenav">
+        <ul>
+            <li id="green"><a href="#">Home</a></li>
+            <li id="blue"><a href="#">CSS </a></li>
+            <li id="red"><a href="#">JAVA</a></li>
+            <li id="grey"><a href="#">HTML</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+    
+    <h3>Hoverable Sidenav Button</h3>
+    <p>Hover over the buttons in the left side navigation to open them</p>
+    </div>
+
+</div>
+
+</body>
+</html>
