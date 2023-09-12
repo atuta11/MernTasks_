@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task-7</title> 
+
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .master{
+            margin: auto;
+            width: 80%;
+            padding :5% 5% ;
+            background-color: rgb(149, 20, 82);
+        }
+
+        .container{
+            margin: auto;
+            padding: 10%;
+            background-color: rgb(109, 5, 56);
+            display: flexbox;
+            flex-direction: row;
+            color: white;
+        }
+       
+        div{
+            display: flex;
+            
+        }
+        div input , select {
+            
+            margin-top: 5px;
+            margin-left: auto;
+            height: 20px;
+        }
+        p{
+            margin: 10px;
+        }
+        select{
+            margin-top: 7px;
+            height: 25px;
+            margin-left: 38%;
+        }
+
+        div button{
+            font-weight: bolder;
+            width: 100%;
+            margin: 10px;
+            border-radius: 7px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Task 7</h1>
+
+    <div class="master">
+
+        <div class="container">
+
+            <form action="">
+                <div>
+                    <p>Name :</p>
+                    <input type="text" placeholder="your name">
+                </div>
+                <div>
+                    <p>Email :</p>
+                    <input type="email" placeholder="your email">
+                </div>
+                <div>
+                    <p>Password :</p>
+                    <input type="password" placeholder="your password">
+                </div>
+                <div>
+                    <p>Phone Number :</p>
+                    <input type="tel" placeholder="your phone number">
+                </div>
+                <div>
+                    <p>Gender</p>
+                    <p style="margin-left: 45%;">Male: </p><input type="radio" name="gender" value=""> 
+                    <p>Female:</p><input type="radio" name="gender" value="female"> 
+                    <p>Other:</p> <input type="radio" name="gender" value="other"> 
+                </div>
+                <div>
+                    <p>Languages</p>
+                    <select>
+                      <option value="hindi">Hindi</option>
+                      <option value="telugu">Telugu</option>
+                      <option value="tamil">Tamil</option>
+                      <option value="bengali">Bengali</option>
+                      <option value="marathi">Marathi</option>
+                      <option selected value="">Select your language</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Zipcode</p>
+                    <input type="text" placeholder="your zipcode">
+                </div>
+                <div>
+                    <p>About</p>
+                    <textarea style="margin-left: 45%;" rows="2" cols="48" placeholder="Tell us about yourself"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+            
+
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+</html>
