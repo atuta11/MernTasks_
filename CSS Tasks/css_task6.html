@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-6</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            margin: 5px;
+            font-weight: bold;
+            
+        }
+        img{
+            display: block;
+            width: 250px;
+            height: 250px;
+            margin: auto;
+            
+        }
+        
+
+        input{
+            margin-left: 10%;
+            margin-right: 10%;
+            width: 100%;
+            padding: 3px;
+            margin: 5px;
+        }
+
+        .master{
+            width: 560px;
+            margin: auto;
+        }
+        .remember{
+            display: inline-block;
+            width: 50%;
+        }
+
+        .submit input{
+
+            background-color: green;
+            color: white;
+            height: 45px;
+       
+
+        }
+        .cancel{
+            background-color: lightgray;
+            
+        }
+        .cancel input{
+            width: 100px;
+            height: 45px;
+            border-radius: 10px;
+            border-color: red;
+            background-color: red;
+            color: white;
+
+        }
+        .cancel a{
+            margin-left: 50%;
+            text-align: right;
+            
+        }
+        #check{
+            max-width: 20px;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Task-6</h1>
+
+    <div class="master">
+    <img src="avatar.avif" alt="profile-pic" srcset="">
+    
+    <form action="">
+
+        <div>
+        <p >Username</p>
+        <input type="text" placeholder="Enter Username">
+        </div>
+        <div>
+        <p >Password</p>
+        <input type="password" name="" id="" placeholder="Enter Password">
+        </div>
+        <div class="submit">
+        <input  type="submit" value="Login">
+        </div>
+        <div class="remember">
+        <input type="checkbox" name="" id="check">
+        <label for="">Remember me</label>
+        </div>
+
+        <div class="cancel">
+        <input type="reset" value="Cancel">
+        <a  href="">Forgot Password?</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>
